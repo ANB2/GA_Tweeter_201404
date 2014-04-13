@@ -1,0 +1,269 @@
+    1  rails s
+    2  cd GA_Rails4_Tweeter/
+    3  rails s
+    4  rails s
+    5  rails s
+    6  rails s
+    7  clear
+    8  rspec
+    9  rspec
+   10  pwd
+   11  cd workspace/readonce/
+   12  rspec
+   13  clear
+   14  rspec
+   15  clear
+   16  rspec
+   17  rspec
+   18  clear
+   19  rspec
+   20  clear
+   21  bundle
+   22  bundle
+   23  clear
+   24  rails g factory_girl:model User
+   25  rspec
+   26  clear
+   27  rspec
+   28  rspec
+   29  clear
+   30  rspec
+   31  clear
+   32  rspec
+   33  rspec
+   34  clear
+   35  rspec
+   36  clear
+   37  rspec
+   38  rspec
+   39  rspec
+   40  rspec
+   41  rspec
+   42  rspec
+   43  clear
+   44  rails g rspec:model user
+   45  rspec
+   46  clear
+   47  rspec
+   48  rspec
+   49  rspec
+   50  git st
+   51  git add .
+   52  git st
+   53  clear
+   54  git commit -m "A user can create a message"
+   55  git push
+   56  git push --set-upstream origin user-creates-a-message
+   57  clear
+   58  rspec
+   59  rspec
+   60  rspec
+   61  rspec
+   62  clear
+   63  rspec
+   64  clear
+   65  rspec
+   66  rspec
+   67  clear
+   68  rspec
+   69  git st
+   70  claer
+   71  clear
+   72  git ci -am m "adding receivers to messages"
+   73  git add .
+   74  git st
+   75  git commit m "Addede receivers to messages"
+   76  git commit -m "Added receivers to messages"
+   77  git st
+   78  git push
+   79  clear
+   80  git st
+   81  git checkout master
+   82  git pull
+   83  clear
+   84  git add .
+   85  git st
+   86  git commit -m "wercker file in Nitrous"
+   87  git st
+   88  git push
+   89  git
+   90  git st
+   91  clear
+   92  git add .
+   93  git commit -m "Modify script for Wrecker"
+   94  git st
+   95  git push
+   96  clear
+   97  heroku auth login
+   98  heroku auth:login
+   99  clear
+  100  heroku git:remote -a readonce-production
+  101  heroku git:remote -a ror-20140119
+  102  heroku run rake db:migrate
+  103  clear
+  104  rspec
+  105  rspec
+  106  git add .
+  107  git st
+  108  clear
+  109  git commit -m "Added receiver to collection"
+  110  git push
+  111  rails s
+  112  irb
+  113  irb
+  114  clear
+  115  cd workspace/
+  116  ls -lru
+  117  cd ..
+  118  mkdir ror_twitter
+  119  ls
+  120  cd ror_twitter/
+  121  rails -h
+  122  rails -v
+  123  gem install rails
+  124  rails -v
+  125  rails new tweeter -d postgresql
+  126  cd tweeter
+  127  rails g
+  128  rails g scaffold tweet
+  129  clear
+  130  history
+  131  clear
+  132  psql
+  133  psql \dt
+  134  psql
+  135  clear
+  136  rake db:setup
+  137  clear
+  138  rake db:setup
+  139  rake db:create
+  140  clear
+  141  rake db:migrate
+  142  rails c 
+  143  rake -T db
+  144  clear
+  145  rails s
+  146  clear
+  147  git
+  148  git init
+  149  git status
+  150  git add .
+  151  git status
+  152  git config --global user.email 'an.business2@gmail.com'
+  153  git config --global user.name 'ANB2'
+  154  git commit -m "Create Rails App and set up Tweet CRUD actions"
+  155  git status
+  156  heroku auth 
+  157  heroku auth:login
+  158  heroku create an2014-tweeter
+  159  git remote
+  160  git push heroku
+  161  git push heroku master
+  162  heroku run rake db:migrate
+  163  gem install launchy
+  164  rails s
+  165  git status
+  166  git commit -m "Make Tweets Index"
+  167  git add .
+  168  git commit -m "Make Tweets Index"
+  169  git status
+  170  git push heroku master
+  171  history
+  172  bundle
+  173  git add .
+  174  git status
+  175  git commit -m "Added 12 factor gem for Heroku. Specify Ruby v2"
+  176  git push heroku master
+  177  gem unicorn
+  178  gem 'unicorn'
+  179  bundle
+  180  clear
+  181  git add .
+  182  git status 
+  183  git comit -m "Added Procfile and Unicorn.rb - modified gemfile"
+  184  git commit -m "Added Procfile and Unicorn.rb - modified gemfile"
+  185  git push heroku master
+  186  ls
+  187  history
+  188  history > history_ror_tweeter_20140412
+  189  ls
+  190  cat history_ror_tweeter_20140412 
+  191  ls
+  192  ls -lru
+  193  cd workspace
+  194  history
+  195  cd ..
+  196  cd ror_twitter/
+  197  bundle
+  198  cd tweeter/
+  199  ls -lru
+  200  bundle
+  201  rails g devise:install
+  202  cd ror_twitter/
+  203  cd tweeter/
+  204  ls -lru
+  205  clear
+  206  rails g devise User
+  207  rake db:migrate
+  208  clear
+  209  rails s
+  210  git status
+  211  git add .
+  212  git status
+  213  git commit -m "Add devise for user login"
+  214  git push heroku master
+  215  heroku run rake db:migrate
+  216  rails g migration addUserIdToTweets user:belong_to 
+  217  rails g migration addUserIdToTweets user:belongs_to 
+  218  rake db:migrate
+  219  rils s
+  220  rails s
+  221  rake db:reset
+  222  rails s
+  223  rake db:reset
+  224  rails s
+  225  rake db:reset
+  226  rails s
+  227  git status
+  228  git add .
+  229  git status
+  230  git commit -m "Added Association between User and Tweets"
+  231  git push heroku master
+  232  heroku run rake db:reset
+  233  heroku run rake db:migrate
+  234  bundle
+  235  rails s
+  236  rails s
+  237  git add .
+  238  git add --all .
+  239  git status
+  240  git push heroku master
+  241  git commit -m "Added bootstrap"
+  242  git push heroku master
+  243  rails s
+  244  cd  ror_twitter/
+  245  cd tweeter/
+  246  ls -lru
+  247  rails s
+  248  bundle
+  249  rails s
+  250  git add --all .
+  251  git status
+  252  git commit -m "Added styling to Tweeter App"
+  253  git push heroku master
+  254  rails s
+  255  rails s
+  256  git add .
+  257  git staus
+  258  git status
+  259  git commit -m  "changed gravatar and added 2nd user"
+  260  git push heroku master
+  261  git remote add origin https://github.com/ANB2/GA_Tweeter_201404.git
+  262  git status
+  263  git push -u origin  master
+  264  rails s
+  265  rails g scaffold user
+  266  rails g controller users
+  267  rails s
+  268  history
+  269  history > history_ror_tweeter_20140413.txt
