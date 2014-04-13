@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'gravtastic'
 
 gem 'rails_12factor'
 gem 'unicorn'
